@@ -1,0 +1,33 @@
+version: '3'
+
+services:
+  batch:
+
+    # path to the image source, used only when building the image
+    build: ./image
+
+    # image name, if using a stock image
+    image: fastgenomics/jupyter-seurat
+
+    volumes:
+      # you can use any path here, for convenience we put the analysis into the local
+      # folder ./analysis
+      - ./analysis:/fastgenomics/analysis:rw
+
+      # specify the data folder, if you cloned the `internal-test-data` repository use
+      # one of the subfolders under ./data (e.g. ./data/readers or ./data/3kPBMC).
+      - ./data/readers:/fastgenomics/data:ro
+
+    # the command to run the notebook in batch mode.
+    command: python -m jupyterfg analysis/analysis.ipynb
+
+  # Configure in the same way as the service above.
+  interactive:
+    build: ./image
+    image: fastgenomics/jupyter-seurat
+    ports:
+      - 8886:8888
+    volumes:
+      - ./analysis:/fastgenomics/analysis:rw
+      - ./data/readers:/fastgenomics/data:ro
+    command: jupyter lab --NotebookApp.token=''
