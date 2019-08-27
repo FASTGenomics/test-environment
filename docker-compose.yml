@@ -4,7 +4,7 @@ services:
   batch:
 
     # path to the image source, used only when building the image
-    build: ./image
+    # build: ./image
 
     # image name, if using a stock image
     image: fastgenomics/jupyter-seurat
@@ -23,7 +23,7 @@ services:
 
   # Configure in the same way as the service above.
   interactive:
-    build: ./image
+    # build: ./image
     image: fastgenomics/jupyter-seurat
     ports:
       - 8886:8888

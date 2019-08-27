@@ -38,7 +38,7 @@ reference for developing and testing new analysis.
    git clone https://github.com/FASTGenomics/image-jupyter-seurat image
    ```
 
-   Note that in such case you'll have to run `docker-compose build`.
+   and uncomment the `build: ...` option in `docker-compose.yml`.
 
 
 ### Running the analysis
