@@ -7,7 +7,8 @@ services:
     # build: ./image
 
     # image name, if using a stock image
-    image: fastgenomics/jupyter-seurat
+    image: fastgenomics/jupyter-scanpy
+    # image: fastgenomics/jupyter-seurat
 
     volumes:
       # you can use any path here, for convenience we put the analysis into the local
@@ -24,7 +25,8 @@ services:
   # Configure in the same way as the service above.
   interactive:
     # build: ./image
-    image: fastgenomics/jupyter-seurat
+    image: fastgenomics/jupyter-scanpy
+    # image: fastgenomics/jupyter-seurat
     ports:
       - 8886:8888
     volumes:
