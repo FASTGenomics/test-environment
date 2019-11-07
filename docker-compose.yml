@@ -31,5 +31,5 @@ services:
       - 8886:8888
     volumes:
       - ./analysis:/fastgenomics/analysis:rw
-      - ./data/readers:/fastgenomics/data:ro
+      - ./data/all_datasets:/fastgenomics/data:ro
     command: jupyter lab --NotebookApp.token=''
