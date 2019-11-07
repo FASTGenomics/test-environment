@@ -15,9 +15,8 @@ services:
       # folder ./analysis
       - ./analysis:/fastgenomics/analysis:rw
 
-      # specify the data folder, if you cloned the `internal-test-data` repository use
-      # one of the subfolders under ./data (e.g. ./data/readers or ./data/3kPBMC).
-      - ./data/readers:/fastgenomics/data:ro
+      # specify the data folder, if you cloned the `test-data` repository use
+      - ./data/all_datasets:/fastgenomics/data:ro
 
     # the command to run the notebook in batch mode.
     command: python -m jupyterfg analysis/analysis.ipynb
