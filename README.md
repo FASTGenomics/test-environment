@@ -39,6 +39,11 @@ reference for developing and testing new analysis.
    ```
 
    and uncomment the `build: ...` option in `docker-compose.yml`.
+   
+   The latest versions of our standard images (`fastgenomics/jupyter-scanpy` and `fastgenomics/jupyter-scanpy`) can be found
+   on [dockerhub](https://hub.docker.com/u/fastgenomics).
+   
+   If you want to develop your own images make sure to always use the latest `fastgenomics/jupyter-base` version as a strating point.
 
 ### Running the analysis
 
