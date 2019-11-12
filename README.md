@@ -27,7 +27,7 @@ reference for developing and testing new analysis.
 
    You can use any other path on your local machine, just remember to update the
    corresponding `docker-compose.yml` path. All the data in the analysis folder will be available in your analysis.
-   Our availbale analyses can be found [here](https://github.com/search?q=topic%3Afastgenomics-analysis+org%3AFASTGenomics&type=Repositories)
+   Our available analyses can be found [here](https://github.com/search?q=topic%3Afastgenomics-analysis+org%3AFASTGenomics&type=Repositories)
 
 1. If you use an existing image specify it in the `docker-compose.yml`.
 
