@@ -19,14 +19,15 @@ reference for developing and testing new analysis.
    (should point to a directory containing the `dataset_0001` folder in the example
    above).
 
-1. Clone your favorite analysis into the `analysis` folder, e.g.,
+1. Clone your favorite analysis (`analysis.ipynb`) into the `analysis` folder, e.g.,
 
    ``` bash
    git clone https://github.com/FASTGenomics/analysis_scanpy_pbmc3k analysis
    ```
 
    You can use any other path on your local machine, just remember to update the
-   corresponding `docker-compose.yml` path.
+   corresponding `docker-compose.yml` path. All the data in the analysis folder will be available in your analysis.
+   Our availbale analyses can be found [here](https://github.com/search?q=topic%3Afastgenomics-analysis+org%3AFASTGenomics&type=Repositories)
 
 1. If you use an existing image specify it in the `docker-compose.yml`.
 
