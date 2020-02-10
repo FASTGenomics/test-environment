@@ -1,4 +1,4 @@
-# analysis-test-environment
+# Test Environment for FASTGenomics Docker Images
 
 Docker files and descriptions on how to run interactive and batch analysis.  Useful as a
 reference for developing and testing new analysis.
