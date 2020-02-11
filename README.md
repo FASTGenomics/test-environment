@@ -22,23 +22,17 @@ reference for developing and testing new analysis.
 1. Clone your favorite analysis (`analysis.ipynb`) into the `analysis` folder, e.g.,
 
    ``` bash
-   git clone https://github.com/FASTGenomics/analysis_scanpy_pbmc3k analysis
+   git clone https://github.com/FASTGenomics/analysis_empty_scanpy analysis
    ```
 
    You can use any other path on your local machine, just remember to update the
    corresponding `docker-compose.yml` path. All the data in the analysis folder will be available in your analysis.
    Our available analyses can be found [here](https://github.com/search?q=topic%3Afastgenomics-analysis+org%3AFASTGenomics&type=Repositories)
 
-1. If you use an existing image specify it in the `docker-compose.yml`.
+1. If you use an existing image from dockerhub specify it in the `docker-compose.yml`.
 
-   Alternatively, if you want to develop and test an image - clone it to the `image`
-   folder (or any other format and update `docker-compose.yml`)
-
-   ``` bash
-   git clone https://github.com/FASTGenomics/image-jupyter-scanpy image
-   ```
-
-   and uncomment the `build: ...` option in `docker-compose.yml`.
+   Alternatively, if you want to build and test an image - clone it to an `image`
+   folder and uncomment the `build: ...` option in `docker-compose.yml`.
    
    The latest versions of our standard images (`fastgenomics/jupyter-scanpy` and `fastgenomics/jupyter-seurat`) can be found
    on [dockerhub](https://hub.docker.com/u/fastgenomics).
